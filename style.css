@@ -1,0 +1,91 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style umum untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 48px; /* Memperbesar judul */
+    margin-bottom: 10px; /* Memberikan ruang di bawah judul */
+}
+
+/* Menambahkan efek hover untuk header */
+header:hover {
+    background-color: #0056b3;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk bagian Portofolio */
+.project {
+    margin-bottom: 30px; /* Memberikan ruang di antara proyek-proyek */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Menambahkan sudut bulat pada gambar */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan pada gambar */
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-top: 15px; /* Memberikan ruang di atas judul proyek */
+}
+
+.project p {
+    font-size: 16px; /* Menambahkan ukuran teks yang lebih mudah dibaca */
+}
+
+/* Menambahkan efek hover pada proyek */
+.project:hover {
+    transform: scale(1.05); /* Memperbesar proyek saat dihover */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Style untuk bagian Kontak */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 18px; /* Memperbesar teks kontak */
+}
+
+/* Style untuk media query (responsif) */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 36px; /* Mengurangi ukuran judul pada layar kecil */
+    }
+
+    /* Mengurangi margin antara proyek-proyek pada layar kecil */
+    .project {
+        margin-bottom: 20px;
+    }
+
+    /* Mengurangi margin atas pada judul proyek pada layar kecil */
+    .project h3 {
+        margin-top: 10px;
+    }
+}
